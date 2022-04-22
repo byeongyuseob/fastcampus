@@ -1,4 +1,4 @@
-package ch13.domain.userinfo.dao;
+package ch13.domain.userinfo;
 
 public class UserInfo {
     private String userId;

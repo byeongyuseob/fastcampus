@@ -1,6 +1,6 @@
-package ch11;
+package ch14;
 
-public abstract class Calculator implements Calc{
+public abstract class Calculator implements Calc {
 
     @Override
     public int add(int num1, int num2) {
@@ -11,4 +11,6 @@ public abstract class Calculator implements Calc{
     public int subtract(int num1, int num2) {
         return num1 - num2;
     }
+
+
 }

@@ -1,6 +1,6 @@
-package ch11;
+package ch14;
 
-public class CompleteCaculator extends Calculator{
+public class CompleteCaculator extends Calculator {
 
     @Override
     public int times(int num1, int num2) {
@@ -18,4 +18,11 @@ public class CompleteCaculator extends Calculator{
     public void showInfo(){
         System.out.println("모두 구현했습니다.");
     }
+
+    @Override
+    public void description() {
+        System.out.println("CompleteCalculator overriding");
+    }
+
+
 }

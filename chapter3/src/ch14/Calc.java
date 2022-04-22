@@ -1,4 +1,4 @@
-package ch11;
+package ch14;
 
 public interface Calc {
     double PI = 3.14;
@@ -8,4 +8,27 @@ public interface Calc {
     int subtract(int num1, int num2);
     int times(int num1, int num2);
     int divide(int num1, int num2);
+
+    default void description(){
+        System.out.println("정수의 사칙연산을 제공합니다.");
+        MyMethod();
+    }
+
+    static int total(int[] arr){
+        int total=0;
+
+        for(int num : arr){
+         total += num;
+        }
+        MyStaticMethod();
+        return total;
+    }
+
+    private void MyMethod(){
+        System.out.println("MyMethod");
+    }
+
+    private static void MyStaticMethod(){
+        System.out.println("MyStaticMethod");
+    }
 }

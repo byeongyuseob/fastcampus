@@ -1,4 +1,4 @@
-package ch11;
+package ch14;
 
 public class CalculatorTest {
     public static void main(String[] args) {
@@ -11,6 +11,10 @@ public class CalculatorTest {
         System.out.println(calculator.subtract(num1, num2));
         System.out.println(calculator.times(num1, num2));
 
-        calculator.showInfo();
+        calculator.description();
+
+        int[] arr = {1, 2, 3, 4, 5};
+
+        System.out.println(Calc.total(arr));
     }
 }
